@@ -1,0 +1,33 @@
+@font-face {
+  font-family: "ant-chain";
+  src: url('ant-chain/iconfont.eot?t=1617189913701'); /* IE9 */
+  src: url('ant-chain/iconfont.eot?t=1617189913701#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('ant-chain/iconfont.woff?t=1617189913701') format('woff'),
+  url('ant-chain/iconfont.ttf?t=1617189913701') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
+  url('ant-chain/iconfont.svg?t=1617189913701#ant-chain') format('svg'); /* iOS 4.1- */
+}
+
+.ant-chain {
+  font-family: "ant-chain" !important;
+  font-size: 32px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.ant-chain-compass:before {
+  content: "\e992";
+}
+
+.ant-chain-car:before {
+  content: "\e993";
+}
+
+.ant-chain-earth:before {
+  content: "\e996";
+}
+
+.ant-chain-bank:before {
+  content: "\e99d";
+}
+

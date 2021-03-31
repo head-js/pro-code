@@ -1,0 +1,21 @@
+@font-face {
+  font-family: "ant-design";
+  src: url('ant-design-3/iconfont.eot?t=1617190883203'); /* IE9 */
+  src: url('ant-design-3/iconfont.eot?t=1617190883203#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('ant-design-3/iconfont.woff?t=1617190883203') format('woff'),
+  url('ant-design-3/iconfont.ttf?t=1617190883203') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
+  url('ant-design-3/iconfont.svg?t=1617190883203#ant-design') format('svg'); /* iOS 4.1- */
+}
+
+.ant-design {
+  font-family: "ant-design" !important;
+  font-size: 32px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.ant-design-car:before {
+  content: "\e7d7";
+}
+

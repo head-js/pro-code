@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ch-02 @font-face</title>
+
+  <link rel="stylesheet" href="/ch02/rsrc/css/bootstrap-short-30b627e7de.css" />
+  <link rel="stylesheet" href="/ch02/rsrc/font/ant-design.css" />
+  <link rel="stylesheet" href="/ch02/rsrc/font/ant-chain.css" />
+  <link rel="stylesheet" href="/ch02/rsrc/font/ant-design-2.css" />
+  <link rel="stylesheet" href="/ch02/rsrc/font/ant-design-3.css" />
+</head>
+<body>
+
+  <br />
+  <br />
+
+  <div class="container">
+    <div class="row">
+      <ul class="list-group">
+        <li class="list-group-item">
+          <pre>
+          // a.css
+          @font-face {
+            font-family: "icon-font";
+            url('a.woff') format('woff');
+          }
+
+          .icon {
+            font-family: "icon-font" !important;
+            font-size: 32px;
+            font-style: normal;
+          }
+
+          .icon-compass:before {
+            content: "\e77d";
+          }
+
+          .icon-car:before {
+            content: "\e993";
+          }
+
+          // b.css
+          @font-face {
+            font-family: "icon-font";
+            url('b.woff') format('woff');
+          }
+
+          .icon {
+            font-family: "icon-font" !important;
+            font-size: 32px;
+            font-style: normal;
+          }
+
+          .icon-bank:before {
+            content: "\e99d";
+          }
+
+          .icon-car:before {
+            content: "\e993";
+          }
+          </pre>
+        </li>
+        <li class="list-group-item"><code>.icon-compass</code>, <code>.icon-bank</code>, <code>.icon-car</code> 分别能否正常显示还是显示成找不到</li>
+        <li class="list-group-item">分别会显示成什么，原理是什么</li>
+        <li class="list-group-item">如果我是一个善良的人，应该在代码的哪里加注释</li>
+      </ul>
+    </div>
+    <div class="row">
+      <table class="table">
+        <thead>
+          <tr>
+            <th></th>
+            <th>compass</th>
+            <th>earth</th>
+            <th>bank</th>
+            <th>car</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th>ant-design</th>
+            <td><i class="ant-design ant-design-compass"></i></td>
+            <td><i class="ant-design ant-design-earth"></i></td>
+            <td><i class="ant-design ant-design-bank"></i></td>
+            <td><i class="ant-design ant-design-car"></i></td>
+          </tr>
+          <tr>
+            <th>ant-chain</th>
+            <td><i class="ant-chain ant-chain-compass"></i></td>
+            <td><i class="ant-chain ant-chain-earth"></i></td>
+            <td><i class="ant-chain ant-chain-bank"></i></td>
+            <td><i class="ant-chain ant-chain-car"></i></td>
+          </tr>
+          <tr>
+            <th>ant-design-2</th>
+            <td><i class="ant-design ant-design-message"></i></td>
+            <td><i class="ant-design ant-design-dashboard"></i></td>
+            <td><i class="ant-design ant-design-experiment"></i></td>
+            <td><i class="ant-design ant-design-chart"></i></td>
+          </tr>
+          <tr>
+            <th>ant-design-3</th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><i class="ant-design ant-design-car"></i></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+</body>
+</html>
